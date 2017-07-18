@@ -1,0 +1,3 @@
+export const GET_IMAGES_REQUEST = 'images/GET_IMAGES_REQUEST'
+export const GET_IMAGES_SUCCESS = 'images/GET_IMAGES_SUCCESS'
+export const GET_IMAGES_ERROR = 'images/GET_IMAGES_ERROR'
