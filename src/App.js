@@ -8,14 +8,15 @@ import { getImagesList } from './redux/selectors/images'
 import { connect } from 'react-redux'
 
 class App extends Component {
+  componentDidMount() {
+    this.props.onLoadImages()
+  }
+
   render() {
-    const { images, onLoadImages } = this.props
-    console.log(onLoadImages)
-    console.log(images)
-    images.map((image) => console.log(image))
+    const { images } = this.props
     return (
       <div className="App">
-        <Images url='http://media.oboobs.ru/boobs_preview/11833.jpg' />)
+        {images.map((image) => <Images key={image.id} url={'http://media.oboobs.ru/' + image.preview} />)}
       </div>
     );
   }
