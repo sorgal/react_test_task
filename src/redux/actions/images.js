@@ -4,7 +4,6 @@ import { GET_IMAGES_REQUEST, GET_IMAGES_SUCCESS, GET_IMAGES_ERROR } from '../../
 export function loadImages () {
   return dispatch => {
     dispatch({ type: GET_IMAGES_REQUEST })
-
     const promise = getImages()
       .then(({ data: images }) => {
         dispatch({ type: GET_IMAGES_SUCCESS, payload: images })

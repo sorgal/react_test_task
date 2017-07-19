@@ -9,7 +9,8 @@ import { connect } from 'react-redux'
 
 class App extends Component {
   render() {
-    const { images } = this.props
+    const { images, onLoadImages } = this.props
+    console.log(onLoadImages)
     console.log(images)
     images.map((image) => console.log(image))
     return (
