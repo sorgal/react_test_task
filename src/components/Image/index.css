@@ -8,3 +8,7 @@
   width: 215px;
   height: 215px;
 }
+
+.image-selected img {
+  border: 4px double black;
+}

@@ -4,13 +4,9 @@ import reducers from './reducers'
 
 const middlewares = [thunk]
 
-// const reduxLogger = require('redux-logger')
-// middlewares.push(reduxLogger({ duration: true, collapsed: true }))
-
 export const store = createStore(
   reducers, compose(
-    applyMiddleware(...middlewares),
-    // window.devToolsExtension() : f => f
+    applyMiddleware(...middlewares)
   )
 )
 

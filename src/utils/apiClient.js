@@ -2,7 +2,7 @@ import axios from 'axios'
 import { camelizeKeys, decamelizeKeys } from 'humps'
 
 const instance = axios.create({
-  baseURL: 'http://api.oboobs.ru/'//process.env.OBOOBS_API_URL
+  baseURL: process.env.OBOOBS_API_URL
 })
 
 instance.interceptors.request.use((request) => {
