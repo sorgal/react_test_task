@@ -6,7 +6,6 @@ export function loadImages () {
     dispatch({ type: GET_IMAGES_REQUEST })
     const promise = getImages()
       .then(({ data: images }) => {
-        console.log(1)
         dispatch({ type: GET_IMAGES_SUCCESS, payload: images })
       })
       .catch(({ response }) => {

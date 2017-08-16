@@ -15,8 +15,12 @@ class DislikeButton extends Component {
   }
 }
 
+const mapStateToProps = (state, props) => ({
+  return { id: this.props.id }
+})
+
 const mapDispatchToProps = dispatch => ({
   hideImage () { dispatch(deleteImage()) }
 })
 
-export default connect(mapDispatchToProps)(DislikeButton)
+export default connect(null, mapDispatchToProps)(DislikeButton)
