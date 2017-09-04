@@ -50,7 +50,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'reactReduxPlayGround', template: path.resolve('src', 'index.ejs') })
+    new HtmlWebpackPlugin({ title: 'testApp', template: path.resolve('src', 'index.ejs') })
   ],
   resolve: {
     extensions: [ '.js', '.coffee' ],

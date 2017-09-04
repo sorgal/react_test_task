@@ -5,10 +5,10 @@ import './index.css'
 export default class Image extends Component {
 
   render () {
-    const { preview, id } = this.props
+    const { preview, id, last } = this.props
     return (
       <div>
-        <div className='image'>
+        <div className={'image ' + (last ? 'image-selected' : '')} >
           <div className='image-chunk'>
             <img src={'http://media.oboobs.ru/' + preview} alt='boobs' />
           </div>

@@ -12,9 +12,15 @@ class Images extends Component {
 
   render () {
     const { images } = this.props
+    const last = {last: images.length > 1 ? false : true}
     return (
       <div>
-        {images.map((image) => <Image key={image.id} {...image} />)}
+        {images.map((image) => {
+          const props = { ...last, ...image }
+          return (
+            <Image key={image.id} { ...props } />
+          );
+        })}
       </div>
     )
   }
