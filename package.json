@@ -24,6 +24,7 @@
   },
   "scripts": {
     "dev-server": "webpack-dev-server --hot --port=8080 --output-public-path=http://localhost:8080/ --config ./src/config/webpack/development.js --content-base",
-    "webpack-dev": "webpack --config ./src/config/webpack/development.js"
+    "webpack-dev": "webpack --config ./src/config/webpack/development.js",
+    "start": "webpack --config ./src/config/webpack/production.js"
   }
 }
